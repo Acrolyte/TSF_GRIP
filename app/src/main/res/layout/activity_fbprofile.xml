@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FbprofileActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Account Details"
+        android:textSize="32sp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/fbpropic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/blank" />
+
+        <TextView
+            android:id="@+id/usrnm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fbpropic"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:text="name"
+            android:fontFamily="sans-serif"
+            android:textAllCaps="false"
+            android:textSize="32dp" />
+
+        <Button
+            android:id="@+id/fblogout_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Sign-Out"
+            android:textAllCaps="false"
+            android:background="@drawable/sign_out_button"
+            android:layout_margin="10dp"
+            android:layout_below="@id/usrnm"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
